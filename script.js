@@ -14,6 +14,30 @@ $( window ).resize(function() {
 
 });
 
+function prepContactPage(){
+    $("#emailCopy").on("click",function(e){
+        var clipboard = new Clipboard(".copy-button");
+        console.info('Text:', e.text);
+    });
+    
+
+}
+
+function scrollTarget(){
+    $(".readMore").on("click",function(){
+        var scrollSpot = $(this).attr("data-scrollTar");
+        $('html, body').animate({
+            scrollTop: $(scrollSpot).offset().top -64
+        }, 1000);
+    })
+
+    $(".scrollTop").on("click",function(){
+        $('html, body').animate({
+            scrollTop: 0
+        }, 600);
+    })
+}
+
 function d3blocks(){
 
     // window.clearTimeout(redrawTimer);
@@ -213,11 +237,12 @@ mvolzApp.controller('aboutController', function($scope) {
 
 mvolzApp.controller('projectController', function($scope) {
     d3blocks();
+    scrollTarget();
 });
 
 mvolzApp.controller('contactController', function($scope) {
     d3blocks();
-    
+    prepContactPage();
 
     $scope.message = 'Contact us! JK. This is just a demo.';
 });

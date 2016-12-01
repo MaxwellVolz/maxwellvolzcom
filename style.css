@@ -51,18 +51,6 @@ div.bgAnim > div {
     background-color:lightgray;
 }
 
-@media (min-width: 992px) {
-
-}
-@media (max-width: 1092px) {
-  .col-md-left{
-    padding-bottom:5px;
-    padding-top:5px;
-    /*margin-top:20px;*/
-    /*padding-top:5px;*/
-    }
-}
-
 
 .axis text {
   font: 10px sans-serif;
@@ -82,8 +70,11 @@ div.bgAnim > div {
 }
 
 .rounded{
-
+    margin-top:40px;
     border-radius: 50%;
+     border-width:1px;
+     border-style: solid;
+     border-color:gray
 }
 
 sup{
@@ -96,9 +87,10 @@ sup{
 .featurette{
     padding-top:40px;
     padding-bottom:40px;
+    min-height: 420px;
 }
 
-.featurette:nth-child(even) {
+.featurette:nth-child(odd) {
     background: #cfdfe5;
 }
 
@@ -106,12 +98,101 @@ sup{
     margin-right: 0;
     margin-left: 0; 
     width: 100%;
+
 }
 
 .previewtainer{
     width: 80%;
-}
+    margin-left: 13%;
+    height:auto;
+    margin-bottom: 40px;
+    }
 .previewCard{
-     background: #cfdfe5;
+    background: #cfdfe5;
+    text-align:left;
+    height: 100%;
+
+     /*margin:5px;*/
+     /*min-height: 300px;*/
+}
+.previewCard > h2{
+    padding-top:5px;
+    /*padding-bottom:5px;*/
+}
+.previewCard > p{
+    /*padding-top:5px;*/
+    padding-bottom:22px;
 }
 
+.previewCard > hr{
+    /*padding-top:5px;*/
+    margin-top:0px;
+}
+
+
+@media (min-width: 992px) {
+     .previewtainer > .row{
+        padding-bottom:40px;
+    }
+}
+@media (max-width: 992px) {
+     .previewtainer > .row{
+        padding-bottom:0px;
+    }
+}
+
+
+@media (max-width: 1092px) {
+  .col-md-left{
+    padding-bottom:5px;
+    padding-top:5px;
+    /*margin-top:20px;*/
+    /*padding-top:5px;*/
+    }
+}
+
+.descButton{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    /* right: 10px; */
+    height: 80%;
+    color: white;
+    opacity:0;
+}
+
+.readMore{
+    /*position:relative;*/
+    border:0;
+    /*right:20px;*/
+/*    float: right;*/
+    margin-bottom: 13px;
+}
+
+.scrollTop
+{
+    margin:10px;
+   border:0; 
+}
+
+.btn-success{
+    /*min-width:120px;*/
+
+    /*margin-left: 82%;*/
+    /*width:18%;*/
+    /*display: inline-block !important;*/
+}
+
+.techUsed{
+/*position: absolute;*/
+
+}
+img.placeholder{
+
+}
+
+
+
+#foot{
+}
