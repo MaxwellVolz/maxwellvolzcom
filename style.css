@@ -1,67 +1,20 @@
-div.homepage{
-	margin: auto;
-	text-align: center;
 
+
+body {
+  padding-top: 50px;
+  padding-bottom: 20px;
 }
-
-div.ng-scope{
-  /*position:relative;*/
-  /*margin-top:100px;*/
-	height:100%;
-}
-
- .cover{
-    margin-top:120px;
-  }
-
-div,h1{
-    font-family: "Open Sans", sans-serif;
-}
-
-p.lead{
-    font-family: "Open Sans", sans-serif;
-    line-height: 1.6;
-    font-size: 2.25rem;
-    font-weight: 100;
-    /*background-color: transparent;*/
-    /*background*/
-    /*text-shadow: 1px 1px black;*/
-}
-
-.container{
-    /*box-shadow: inset 0 0 100px rgba(0,0,0,.5);*/
-
-}
-
-
-input[type=text] {
-	color:black;
-	font-weight:bold;
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    box-sizing: border-box;
-    border: 3px solid #ccc;
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
-    outline: none;
-}
-input[type=text]:focus {
-    border: 3px solid #555;
-}
-
 
 
 div.bgAnim {
     position:absolute;
     left:0px;
-    top:80px;
-    width:100%;
+    top:50px;
+    min-height:100px;
     overflow:hidden;
-    z-index: -5;
+    z-index: -1;
     width:100%;
-    max-height: 220px;
-
+    /*max-height: 220px;*/
 }
 div.bgAnimCover {
     position:absolute;
@@ -74,12 +27,91 @@ div.bgAnimCover {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0)), to(rgba(255,255,255,1)), color-stop(.5,white));
 }
 
+.jumbotron{
+   background-color:rgba(0, 0, 0, 0.1);
+   /*background-color:rgba(232, 248, 255, .4);*/
+   overflow: hidden
+
+}
+
 div.bgAnim > div {
   opacity:.5;
-  width: 12px;
-  height: 12px;
+  width: 4%;
+  height: auto;
   margin: 0px 0 0 0px;
   float: left;
   /*background: #eee;*/
   /*display: inline-block;*/
 }
+
+.col-md-left{
+    text-align:left;
+}
+.bg-lightgray{
+    background-color:lightgray;
+}
+
+@media (min-width: 992px) {
+
+}
+@media (max-width: 1092px) {
+  .col-md-left{
+    padding-bottom:5px;
+    padding-top:5px;
+    /*margin-top:20px;*/
+    /*padding-top:5px;*/
+    }
+}
+
+
+.axis text {
+  font: 10px sans-serif;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.hexagon {
+  fill: none;
+  stroke: #000;
+  stroke-width: .1px;
+}
+
+.rounded{
+
+    border-radius: 50%;
+}
+
+sup{
+        top: -1.3em;
+    left: .3em;
+    color:gray;
+    font-size: 35%;
+}
+
+.featurette{
+    padding-top:40px;
+    padding-bottom:40px;
+}
+
+.featurette:nth-child(even) {
+    background: #cfdfe5;
+}
+
+.featurtainer{
+    margin-right: 0;
+    margin-left: 0; 
+    width: 100%;
+}
+
+.previewtainer{
+    width: 80%;
+}
+.previewCard{
+     background: #cfdfe5;
+}
+
