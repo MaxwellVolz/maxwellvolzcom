@@ -24,6 +24,23 @@ function prepContactPage(){
 }
 
 function scrollTarget(){
+
+    $("#otherGif").on("click",function(){
+        var opacityCheck = $("#otherGif > img").css("opacity");
+
+        if(opacityCheck < 0.5){
+            $("#otherGif > img").animate({
+                opacity: 1
+            }, 100);
+        }
+        else{
+             $("#otherGif > img").animate({
+                opacity: 0
+            }, 100);
+        }
+
+    })
+
     $(".readMore").on("click",function(){
         var scrollSpot = $(this).attr("data-scrollTar");
         $('html, body').animate({

@@ -192,7 +192,11 @@ img.placeholder{
 
 }
 
-
+#otherGif{
+    position: relative;
+    height: 20px;
+    top: -240px;
+}
 
 #foot{
 }

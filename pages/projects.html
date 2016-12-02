@@ -131,8 +131,16 @@
 			</div>
 
 			<div class="col-md-3 col-md-offset-2" style="text-align:center;">
-				<img class="rounded" src="images/poyo.gif" alt="Generic placeholder image" width="200" height="200">
+				<!-- Make gif swap out with alternate on click -->
+				<!-- <button type="button" class="collapsed descButton" data-toggle="collapse" data-target="#agarDesc" aria-expanded="false" aria-controls="agarDesc"></button> -->
+				<img class="rounded" id="mainPoyoGif" src="images/poyo.gif" alt="Generic placeholder image" width="200" height="200">
+
+				<div class="" id="otherGif">
+					<img class="rounded" src="images/poyo2.gif" alt="Generic placeholder image" width="200" height="200" style="opacity:0">
+				</div>
 			</div>
+			<!-- <div class="col-sm-6 col-md-2 col-md-offset-1" style="text-align:center;">
+			</div> -->
 			<button class="scrollTop btn-info" >Scroll Top</button>
 		</div>
 		
@@ -142,6 +150,7 @@
 			<div class="col-md-5 col-md-offset-1 col-md-push-5" >
 				<h2>In Other Words<sup style="color:#5cb85c;">Online</sup></h2>
 				<p>This is a phrase translation app I created using Google Drive and Google Forms. It can help you determine what people really mean when they might be speaking in code. The database is user generated and I could definitely use your submissions!!</p>
+				<p class="techUsed" style="color:gray">Technologies Used: <br>Google APIs, JavaScript, User Generated Content, HTML5, CSS3 </p>
 				<a href="sites/iow/index.html" class="btn btn-info" role="button">Try it</a>
 			</div>
 			<div class="col-md-3 col-md-offset-2  col-md-pull-7" style="text-align:center;">
@@ -155,6 +164,8 @@
 			<div class="col-md-5 col-md-offset-1" >
 				<h2>FangChat<sup style="color:#5cb85c;">Online</sup></h2>
 				<p>Instant browser chat. Utilizes Firebase on the backend and Angular for instant communication between devices and browsers.</p>
+				<p class="techUsed" style="color:gray">Technologies Used: <br>Facebook Authentication, FirebaseDB APIs, JavaScript, HTML5, CSS3</p>
+
 				<a href="sites/fang/index.html" class="btn btn-info" role="button">Try it</a>
 			</div>
 			<div class="col-md-3 col-md-offset-2" style="text-align:center;">
@@ -169,7 +180,7 @@
 				<p>AWS learning project.</p>
 				<p>I was able to recreate the open source agar.io clone project (<a href="https://github.com/huytd/agar.io-clone">src</a>) on Amazon Web Servers using an EC2 Micro Instance as the server and logic controller</p><p>I used a S3 Bucket publicly hosted as a website, with DNS servers configured using Route53.</p>
 				<p>This project is currently offline as of 11.17.16 due to the costs of running a t2 micro.</p>
-				<p class="techUsed" style="color:gray">Technologies Used: <br>Amazon Web Services, Git, NodeJS, JavaScript</p>
+				<p class="techUsed" style="color:gray">Technologies Used: <br>Amazon Web Services, Git, NodeJS, JavaScript, HTML5 Canvas, CSS3</p>
 			</div>
 			<div class="col-md-3 col-md-offset-2 col-md-pull-7" style="text-align:center;">
 				<img class="rounded" src="images/agario.gif" alt="Generic placeholder image" width="200" height="200">
