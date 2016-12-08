@@ -1,65 +1,76 @@
-<!DOCTYPE html>
-<html ng-app="mvolzApp">
-
+<!doctype html>
+<html lang="en" ng-app="myApp">
 <head>
-	<meta charset="utf-8"/>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>MaxwellVolz.com</title>
+  <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MaxwellVolz.com</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/carousel.css">
+    <link rel="stylesheet" href="css/cover.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/openSans.css">
 
-
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
-
-	<!-- Optional theme -->
-	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css"> -->
-
-
-	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-
-	<!-- D3v4 -->
-	<script src="https://d3js.org/d3.v3.min.js"></script>
-
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
-
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.13/clipboard.min.js"></script>
-
-
-	<!-- Latest compiled and minified JavaScript -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
-
-
-	<link href="style.css" rel="stylesheet" />
-	<!-- <link href="carousel.css" rel="stylesheet" /> -->
-
-	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
-	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
-	<script src="script.js"></script>
-
-	<script src="scripts/d3.hexbin.min.js"></script>
-
-	<!-- favicon -->
-	<!-- <link rel="icon" type="image/png" href=""> -->
+  <!-- <link rel="stylesheet" href="css/app.css"> -->
 </head>
-		<div class="bgAnim"></div>
-		<!-- <div class="bgAnimCover"></div> -->
+<body>
 
-<div ng-view>
-	
-</div>
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#"><b>M</b>axwell<b>V</b>olz</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+            <!-- <a class="navbar-brand" href="#about">About</a> -->
+            <a class="navbar-brand" href="#/projects">Projects</a>
+            <a class="navbar-brand" href="#/contact">Contact</a>
+        </div>
+    </div>
+</nav>
+
+<div class="bgAnim"></div>
+<!-- <div class="bgAnimCover"></div> -->
+
+<div ng-view></div>
+
 <footer>
-	<div class="row">
-		<div class="col-md-2">
-			<!-- GitHub Icon Link to (this) repo -->
-			<image src="#" height="40px" width="40px">
-		</div>
-		<div class="col-md-2 col-md-offset-1">
-			<!-- LinkedIn Icon Link -->
-			<image src="#" height="40px" width="40px">
-		</div>
-		<div class="col-md-6 col-md-offset-1">
-			<h4>Last Updated: <span id="lastUpdateTime">Loading...</span></h4>
-		</div>
-	</div>
+
+  <div class="footerLink">
+    <!-- GitHub Icon Link to (this) repo -->
+    <a href="https://github.com/MaxwellVolz/maxwellvolzcom" target="_blank">
+      <image src="images/git64px.png" height="40px" width="40px"></image>
+  </a>
+</div>
+<div class="footerLink">
+    <!-- LinkedIn Icon Link -->
+    <a href="https://www.linkedin.com/in/maxwell-volz-57936556" target="_blank">
+        <image src="images/linkedIn.png" height="40px" width="40px"></image>
+    </a>
+</div>
+  <!--    <div class="lastUpdated" style="margin-top: 22px;height:40px">
+        <p>Last Updated: <span id="lastUpdateTime">12/6/2016</span></p>
+    </div> -->
+
 </footer>
+
+  <!-- In production use:
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+-->
+<script src="lib/angular/angular.js"></script>
+<script src="lib/jquery.min.js"></script>
+<script src="lib/underscore.js"></script>
+<script src="js/app.js"></script>
+<script src="js/services.js"></script>
+<script src="js/controllers.js"></script>
+<script src="js/filters.js"></script>
+<script src="js/directives.js"></script>
+<script src="lib/d3.v3.min.js"></script>
+<script src="lib/d3.hexbin.min.js"></script>
+<script src="lib/bootstrap.min.js"></script>
 </body>
 </html>
