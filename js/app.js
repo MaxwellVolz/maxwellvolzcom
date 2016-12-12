@@ -20,6 +20,10 @@ config(['$routeProvider', function($routeProvider) {
 			templateUrl: 'partials/contact.html', 
 			controller: 'contactCtrl'
 		})
+		.when('/maxTV', {
+			templateUrl: 'partials/maxTV.html', 
+			controller: 'tvCtrl'
+		})
 		.otherwise({
 			redirectTo: '/home'
 		});
